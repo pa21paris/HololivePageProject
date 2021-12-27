@@ -5,24 +5,41 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hololive</title>
-        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/index_style.css">
+        <link rel="stylesheet" href="./styles/index_tablet.css" media="screen and (min-width:572px)">
     </head>
     <body>
         <header>
             <img src="./images/hololiveLogo.png" alt="Logo de hololive">
             <nav>
-                <ul>
-                    <li><img src="./images/menuDesplegable.png" alt="menuDesplegable"></li>
+                <ul class="menuNormal">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./talents.html">Talents</a></li>
+                    <li><a href="./songs.html">Songs</a></li>
+                </ul>
+                <img class="menudesplegable" src="./images/menuDesplegable.png" alt="menuDesplegable">
+                <ul class="menuDesplegable">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./talents.html">Talents</a></li>
+                    <li><a href="./songs.html">Songs</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section class="about">
                 <h1>About</h1>
-                <img src="./images/Hololive.jpg" alt="Hololive members image">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolor nesciunt repellendus eveniet amet maiores sed eos? Totam incidunt facilis magnam mollitia excepturi sequi officiis molestiae odio, omnis quisquam ab.</p>
+                <div class="content">
+                    <img src="./images/Hololive.jpg" alt="Hololive members image">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolor nesciunt repellendus eveniet amet maiores sed eos? Totam incidunt facilis magnam mollitia excepturi sequi officiis molestiae odio, omnis quisquam ab.</p>
+                </div>
             </section>
-            <section>
+            <section class="media">
+                <h1>Media</h1>
+                <div class="videos">
+                    <iframe src="https://www.youtube.com/embed/V8B0oC9poy4?start=1" title="Gura singing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/LPyR04EVH-g" title="Yeah" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/o-vqd2Vv4ew" title="Mumei singing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </section>
         </main>
     </body>

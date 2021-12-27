@@ -1,0 +1,30 @@
+nav .menuNormal{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .menuNormal a:hover{
+    font-size: 2rem;
+}
+
+nav .menuDesplegable, nav .menudesplegable{
+    display: none;
+}
+
+.about .content{
+    display: flex;
+    flex-direction: column;
+    max-width: 512px;
+}
+
+.about h1{
+    width: 100%;
+    max-width: 512px;
+}
+
+.about{
+    align-items: center;
+}
